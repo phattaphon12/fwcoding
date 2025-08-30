@@ -1,0 +1,37 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* สไตล์พื้นหลังแบบ Parallax */
+.parallax {
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* ทำให้เกิดเอฟเฟกต์ Parallax */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.parallax-1 {
+    background-image: url('https://i.pinimg.com/736x/e5/70/fc/e570fc80117c2be9b9ec51ccda683356.jpg');
+}
+
+.content {
+    background-color: black;
+    color: white;
+    padding: 300px 20px;
+    font-size: 24px;
+}
+
+.parallax-2 {
+    background-image: url('https://i.pinimg.com/736x/b3/1d/a4/b31da43778a488de959eef0695f9e161.jpg');
+}

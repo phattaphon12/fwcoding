@@ -1,0 +1,442 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #333;
+}
+
+footer p {
+    color: white;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+p {
+    color: rgb(85, 85, 85);
+    font-size: 1.1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    padding-top: 6rem;
+    height: auto;
+    padding-bottom: 5rem;
+    margin: 0rem 7rem 0rem 7rem;
+}
+
+/* Navvvvvvvvvv */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #333;
+    text-align: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    padding: 0.5rem;
+    list-style: none;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    color: white;
+    display: block;
+    padding: .5rem 1rem;
+}
+
+.nav-links a:hover {
+    background: #555;
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+    display: none;
+    padding: 1rem;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
+/* Profile */
+#profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10rem;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+.profile_pic {
+    display: flex;
+    height: 400px;
+    width: 400px;
+}
+
+.profile_pic img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile_info {
+    text-align: center;
+}
+
+.profile_link {
+    justify-content: center;
+    display: flex;
+    gap: 1rem;
+}
+
+.profile_link img {
+    width: 3rem;
+}
+
+.profile_but {
+    padding: 1rem 0% 1rem 0%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.profile_but button {
+    cursor: pointer;
+    font-weight: 600;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+    border: 0.1rem solid black;
+    background-color: white;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.profile_but button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* About Me */
+#about {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.about_me {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about_pic img {
+    width: 20rem;
+    border-radius: 2rem;
+}
+
+.about_info {
+    max-width: 40rem;
+    text-align: center;
+}
+
+.about_con {
+    padding: 1.5rem;
+    border-radius: 2rem;
+    border: rgb(144, 144, 144) 0.1rem solid;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Experience */
+#experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.experience_con {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    border: rgb(144, 144, 144) 0.1rem solid;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #e2e2e2;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 3rem;
+    height: auto;
+}
+
+.class {
+    text-align: left;
+}
+
+/* Project */
+#project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.project_con {
+    display: flex;
+    gap: 4rem;
+}
+
+.project_info {
+    padding: 1.5rem;
+    border-radius: 2rem;
+    border: rgb(144, 144, 144) 0.1rem solid;
+    text-align: center;
+}
+
+.project_info img {
+    height: 30rem;
+    width: 15rem;
+    object-fit: cover;
+    border-radius: 1.5rem;
+}
+
+.project_info p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.project_but {
+    margin-top: 1.5rem;
+}
+
+.project_but button {
+    cursor: pointer;
+    font-weight: 600;
+    padding: 1rem;
+    width: 8rem;
+    color: #555;
+    border-radius: 2rem;
+    border: rgb(144, 144, 144) 0.1rem solid;
+    background-color: white;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.project_but button:hover {
+    background-color: rgb(144, 144, 144);
+    color: white;
+}
+
+/* Contact */
+#contact {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.contact_con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    border: rgb(144, 144, 144) 0.1rem solid;
+}
+
+.contact_mail {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.contact_mail img {
+    width: 3rem;
+
+}
+
+.contact_link {
+    display: flex;
+    gap: 2rem;
+}
+
+.contact_info img {
+    width: 3rem;
+}
+
+.contact_info p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1150px) {
+    section {
+        gap: 1rem;
+    }
+
+    h1 {
+        margin-bottom: 0;
+    }
+
+    #profile {
+        flex-direction: column;
+        padding-top: 8rem;
+        gap: 2rem;
+    }
+
+    #experience {
+        margin: 0rem 10rem 0rem 10rem;
+    }
+
+    #about,
+    #experience,
+    #project,
+    #contact {
+        gap: 1.5rem;
+    }
+
+    .about_me {
+        gap: 3rem;
+    }
+
+    .profile_pic {
+        height: 300px;
+        width: 300px;
+    }
+
+    .experience_con {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 820px) {
+    .experience_con {
+        grid-template-columns: 1fr;
+    }
+
+    .contact_con {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 760px) {
+    .project_con {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #333;
+        position: absolute;
+        top: 60px;
+        /* Adjust based on nav height */
+        left: 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 0;
+    }
+
+    .nav-links a {
+        padding: 15px;
+    }
+
+}
+
+@media (max-width: 560px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding-top: 0%;
+        margin: 0%
+    }
+
+    #experience,
+    #about {
+        margin: 0rem 5rem 0rem 5rem;
+    }
+}
+
+
+@media (max-width: 420px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    #experience {
+        margin: 0rem 2rem 0rem 2rem;
+    }
+}
